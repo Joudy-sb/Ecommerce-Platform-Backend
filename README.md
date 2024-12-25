@@ -7,7 +7,7 @@ This README explains how to set up and run the E-Commerce Project using Docker C
 1. Install Docker and Docker Compose on your machine.
 2. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/Hippity/ecommerce-435L.git
+   git clone https://github.com/Joudy-sb/Ecommerce-Platform-Backend.git
    cd ecommerce-435L
    ```
 3. Ensure `docker-compose.yml`, `requirements.txt`, and all service directories (`auth`, `customer`, `sales`, `review`, `inventory`) are present in the root directory.
