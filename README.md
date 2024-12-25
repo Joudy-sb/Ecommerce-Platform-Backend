@@ -1,16 +1,36 @@
-# Microservices Setup Guide
+# E-Commerce Backend Services with Docker
 
-This README explains how to set up and run the E-Commerce Project using Docker Compose. The project consists of multiple microservices, including `auth-service`, `customer-service`, `sales-service`, `review-service`, `inventory-service`, and a MySQL database.
+This project implements the backend services of an eCommerce website. It consists of five microservices, each containerized using Docker and communicating via RESTful API calls. The focus is on modularity, scalability, and efficient testing with Postman.
 
-## Prerequisites
+## Services Overview
 
-1. Install Docker and Docker Compose on your machine.
+1. **Auth Service**: Manages user login and authentication.
+2. **Customers Service**: Handles customer registration, profile updates, and wallet management.
+3. **Inventory Service**: Manages the addition, updating, and stock tracking of goods.
+4. **Sales Service**: Processes purchases, verifies customer funds, and updates inventory.
+5. **Reviews Service**: Manages product reviews, including submission, updates, and moderation.
+
+## Features
+
+- **Microservices Architecture**: Independent services for scalability and maintainability.
+- **Dockerized Deployment**: Each service is containerized for consistent development and deployment.
+- **API Communication**: Services interact via well-defined REST APIs.
+- **Database Integration**: Persistent data storage using SQLAlchemy with MySQL Workbench.
+
+---
+
+## Microservices Setup Guide
+
+Follow these steps to set up and run the project using Docker Compose.
+
+### Prerequisites
+
+1. Install **Docker** and **Docker Compose** on your machine.
 2. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/Joudy-sb/Ecommerce-Platform-Backend.git
    cd ecommerce-435L
-   ```
-3. Ensure `docker-compose.yml`, `requirements.txt`, and all service directories (`auth`, `customer`, `sales`, `review`, `inventory`) are present in the root directory.
+3. Ensure `docker-compose.yml`, `requirements.txt`, and all service directories (`auth`, `customer`, `sales`, `review`, `inventory`) are present in the root directory.`
 
 ## Setting Up the Project
 
